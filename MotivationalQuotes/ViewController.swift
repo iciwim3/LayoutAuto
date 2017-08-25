@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var inspireMeButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        inspireMeButton.layer.cornerRadius = 3.0
+        inspireMeButton.layer.masksToBounds = true
+        
     }
 
     override func didReceiveMemoryWarning() {
